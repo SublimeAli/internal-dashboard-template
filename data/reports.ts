@@ -1,0 +1,58 @@
+import type { Report } from "@/lib/types";
+
+export const reports: Report[] = [
+  {
+    id: "r_01",
+    name: "Weekly Performance — All Advertisers",
+    owner: "ops@adstack.io",
+    schedule: "weekly",
+    lastRun: "2026-04-26",
+    metrics: ["spend", "impressions", "clicks", "ctr", "conversions"],
+    dimensions: ["advertiser", "channel"],
+  },
+  {
+    id: "r_02",
+    name: "Daily Pacing Snapshot",
+    owner: "trader@adstack.io",
+    schedule: "daily",
+    lastRun: "2026-04-27",
+    metrics: ["spend", "budget", "pacing"],
+    dimensions: ["campaign"],
+  },
+  {
+    id: "r_03",
+    name: "Creative Fatigue — Top 50",
+    owner: "ops@adstack.io",
+    schedule: "weekly",
+    lastRun: "2026-04-22",
+    metrics: ["impressions", "ctr", "frequency"],
+    dimensions: ["creative", "campaign"],
+  },
+  {
+    id: "r_04",
+    name: "Inventory Quality — Viewability",
+    owner: "ops@adstack.io",
+    schedule: "monthly",
+    lastRun: "2026-04-01",
+    metrics: ["impressions", "viewability", "ecpm"],
+    dimensions: ["site", "channel"],
+  },
+  {
+    id: "r_05",
+    name: "Audience Overlap — Q2",
+    owner: "trader@adstack.io",
+    schedule: "manual",
+    lastRun: "2026-04-15",
+    metrics: ["reach", "overlap", "ctr"],
+    dimensions: ["audience"],
+  },
+  {
+    id: "r_06",
+    name: "Conversion Funnel — Helio Bank",
+    owner: "trader@adstack.io",
+    schedule: "weekly",
+    lastRun: "2026-04-26",
+    metrics: ["impressions", "clicks", "visits", "conversions"],
+    dimensions: ["campaign", "creative"],
+  },
+];
